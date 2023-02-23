@@ -14,7 +14,7 @@ class GrokTest {
         assertTrue(grok.isDead(),"A Grok should be dead when instantiated with a zero power level!");
         grok = new Grok(-5);
         assertTrue(grok.isDead(),"A Grok should be dead when instantiated with a negative power level!");
-        grok = new Grok(1000);
+        grok = new Grok(100);
         String expected = "Grok:(100,true)";
         String actual = grok.toString();
         String message = "Expecting "+expected+" and got "+actual;
